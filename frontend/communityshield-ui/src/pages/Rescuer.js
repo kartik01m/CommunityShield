@@ -4,7 +4,7 @@ import MainLayout from '../layout/MainLayout';
 import MapView from '../components/MapView';
 import '../App.css';
 
-const API = 'http://localhost:8000';
+const API = 'https://communityshield.onrender.com';
 const RISK_ORDER   = { HIGH: 0, MEDIUM: 1, LOW: 2 };
 const STATUS_ORDER = { pending: 0, accepted: 1, resolved: 2 };
 

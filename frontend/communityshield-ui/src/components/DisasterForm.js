@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import axios from 'axios';
 
-const API = 'http://localhost:8000';
+const API = 'https://communityshield.onrender.com';
 
 const DISASTER_TYPES = [
   { value: '',           label: '— Select disaster type —' },
