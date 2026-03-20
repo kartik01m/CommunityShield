@@ -1,29 +1,22 @@
-import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
+import Rescuer from './pages/Rescuer';
+import EmergencyGuide from './pages/EmergencyGuide';
+import './App.css';
 
-import Login from "./pages/Login"
-import Dashboard from "./pages/Dashboard"
-import Rescuer from "./pages/Rescuer"
-
-function App(){
-
-return(
-
-<Router>
-
-<Routes>
-
-<Route path="/" element={<Login/>}/>
-
-<Route path="/dashboard" element={<Dashboard/>}/>
-
-<Route path="/rescuer" element={<Rescuer/>}/>
-
-</Routes>
-
-</Router>
-
-)
-
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/"        element={<Login />} />
+        <Route path="/citizen" element={<Dashboard />} />
+        <Route path="/rescuer" element={<Rescuer />} />
+        <Route path="/guide"   element={<EmergencyGuide />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
